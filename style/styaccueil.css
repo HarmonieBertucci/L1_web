@@ -1,0 +1,199 @@
+
+
+/**** Page générale ****/
+
+html{
+	font-family: Palatino Linotype, sans-serif;
+	margin-left: 3%;
+	margin-right: 3%;
+	background-color: #E9FDFF;
+	text-align:justify;
+} /* écriture, marges et couleur de fond de la page */
+
+a{
+	text-decoration:none;
+	color: #4A94A2;
+}
+
+article{
+	width:90%
+}
+
+
+/*** Header ***/
+header{
+	padding-top: 5em;
+	text-align: center;
+	font-size: 120%; /*taille de l'écriture*/
+	font-style: italic;
+	color: #c7f4f5 ;
+	background: url("images/Corsica-calvi-panorama.jpg") ;
+	background-repeat:no-repeat ;
+	background-position: bottom; /*pour que, si lebackground est plus grand que l'espace qui lui est réservé, on voit en priorité le bas*/
+
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.7); /*pour la lisibilité du menu*/
+}
+
+nav ul{
+	grid-template-columns:1fr 1fr 1fr 1fr;
+}
+
+header li {
+	font-weight:bold;
+	color: #4A94A2;
+	font-size: 130%;
+}
+
+header li:hover{ /*hover : au passage de la souris*/
+	color:#f07819;
+}
+
+.man:hover{
+	color:#f07819;
+}
+
+/**** Page Accueil ****/
+
+/** Partie 1 **/
+
+span{
+	background-color: #08b4d6;
+} /*surligner le titre*/
+
+#p1{
+	border-radius: 0.25em;
+	background-color:#cefbff;
+	padding-bottom:2em;
+}
+
+#p1 p{
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+#cadre{
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+}/*mettre côte à côte images et texte*/
+
+#img1 {
+	width:200px;
+	margin:90px 5px auto 15px;
+}
+#img2 {
+	width:230px;
+	margin: 120px 5px auto auto;
+}
+
+
+#table{
+	display: grid;
+	grid-template-columns: 1fr 7fr;
+	margin-top: -10px ;
+} /*mettre les dates en avant*/
+
+#table p:nth-child(even){
+	margin-left:1em;
+	margin-right:1em;
+}
+
+
+/** Partie 2 **/
+
+#img4{
+	width:100%;
+	margin: auto;
+}
+
+#pho4{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 60%;
+	margin:auto;
+	border-bottom: solid #4A94A2;
+	border-radius: 0.25em;
+	background-color:#cefbff;
+	margin-bottom: 2em;
+}
+
+#img5{
+	width:100%;
+	margin: auto;
+}
+
+#pho5{
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	width: 80%;
+	margin: auto;
+	border-bottom: solid #4A94A2;
+	border-radius: 0.25em;
+	background-color:#cefbff;
+	margin-bottom:2em;
+}
+
+#img6{
+	width:100%;
+	margin: auto;
+}
+
+#pho6{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	width: 80%;
+	margin: auto;
+	border-bottom: solid #4A94A2;
+	border-radius: 0.25em;
+	background-color:#cefbff;
+	margin-bottom:2em;
+}
+
+.dev{
+	margin-left:1em;
+	margin-right:1em;
+	align-self:center;
+}
+
+
+#photos{
+	padding-bottom:2em;
+	padding-top:1em;
+	border-bottom: solid #4A94A2;
+	border-radius: 0.25em;
+	background-color:#DCFBFE;
+}
+
+/*** Responsive design ***/
+@media(max-width:522px){
+	nav ul{
+		grid-template-columns:1fr 1fr;
+	}
+	nav ul li{
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+	}
+	#cadre{
+		display:block;
+	}
+}
+
+@media(max-width:557px){
+	#pho4{
+		display:block;
+	}
+}
+
+@media(max-width:600px){
+	#table{
+		display:block;
+	}
+}
+
+@media(max-width:778px){
+	#pho5, #pho6{
+		display:block;
+	}
+}

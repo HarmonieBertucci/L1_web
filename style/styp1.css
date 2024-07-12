@@ -1,0 +1,175 @@
+/**** Page générale ****/
+
+a{
+	color: #e58e79;
+}
+
+span{	background-color:#eb370b;
+}
+
+/**** Header ****/
+header{
+	background: url("images/acb.jpg") ;
+	padding-top:13em;
+}
+
+
+
+
+/**** Menu  ****/
+
+
+
+nav p a{
+	color:black;
+}
+
+.men{
+	background: #eb370b;
+	height:100%;
+}
+
+.men a{
+	padding-top: 0.3em;
+}
+
+#page{
+	text-align: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap:1em;
+	font-weight:bold;
+	height:40%;
+}
+
+#seul{
+	grid-column: span 3;
+	text-align: center;
+}
+
+
+#page .categorie {
+	vertical-align: top;
+	background: #eb370b;
+}
+
+#page li{
+	text-align: center;
+	padding-left: 2em;
+}
+
+#page a {
+	display: block;
+	margin: auto;
+	color: black;
+	text-decoration: none;
+	box-sizing: border-box;
+	width: 10em;
+	text-align: center;
+}
+
+#page .categorie:hover {
+	color: white;
+	background-color: #4A94A2;
+}
+
+#page a:hover {
+	color: white;
+	background-color:#4A94A2 ;
+}
+
+nav p a:hover{
+	color: white;
+	background-color: #4A94A2;
+}
+
+/**** Ajaccio ****/
+
+
+
+#aja{
+	width:90%;
+	margin:auto;
+	border:solid #4A94A2 2px;
+	border-radius:0.25em;
+	padding-left:1em;
+	padding-right:1em;
+	margin-bottom:2em;
+
+}
+
+.nb{
+	display:grid;
+	grid-template-columns:2fr 1fr;
+}
+
+.nb p{
+	align-self:center;
+}
+
+img{
+width:90%;
+transition: 1s ;
+transition-timing-function: ease;
+}
+
+
+figure img:hover{
+transform:scale(2);
+}
+
+/**** Corte ****/
+#cor{
+	text-align:center;
+	width:90%;
+	margin:auto;
+	border:solid #4A94A2 2px;
+	border-radius:0.25em;
+	padding-left:1em;
+	padding-right:1em;
+	margin-bottom:2em;
+}
+
+.nb0{
+	display:grid;
+	grid-template-columns:1fr 2fr;
+}
+
+.nb0 p{
+	align-self:center;
+}
+
+
+/**** Bastia ****/
+#bas{
+	text-align:right;
+	width:90%;
+	margin:auto;
+	border:solid #4A94A2 2px;
+	border-radius:0.25em;
+	padding-left:1em;
+	padding-right:1em;
+	margin-bottom:2em;
+}
+
+
+/***********responsive design *************/
+
+
+@media (max-width:800px) {
+	#page{
+		display:  block;
+	}
+}
+
+@media (max-width:760px) {
+	.nb{
+		display:  block;
+	}
+	.nb0{
+		display: block;
+	}
+	figure img:hover{
+	transform:scale(1);
+	}
+}

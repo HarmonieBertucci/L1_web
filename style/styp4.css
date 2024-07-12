@@ -1,0 +1,100 @@
+/**** Page générale ****/
+
+
+a{
+	color: #78367e;
+}
+
+span{
+background-color: #78367e;
+}
+
+header{
+	background-image: url("images/sgc.jpg");
+	padding-top:18em;
+}
+
+blockquote{
+	font-style:italic;
+}
+
+/**** Menu ****/
+nav ul{
+	grid-template-columns:1fr 1fr 1fr;
+	grid-gap: 1em;
+}
+
+#menu a:hover{
+	background-color: black;
+	border-radius: 0.5em;
+}
+
+/**** Article 1 ****/
+table{
+	width:90%;
+	margin:auto;
+	margin-bottom: 1em;
+}
+table td{
+	border:solid black 1px;
+	border-radius: 0.2em;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+
+/**** Article 2 ****/
+.cote{
+	width:40%;
+	float:right;
+	margin-left:1em;
+}
+
+#fb{
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+#fb img{
+	width:90%;
+	margin:auto;
+}
+
+#grnd{
+	transition: 1s;
+	transition-timing-function: ease;
+}
+#grnd:hover{
+	transform: scale(2)
+}
+
+#fdm{
+	float:right;
+	width:30%;
+	margin-right: 0px;
+}
+
+#fdm img{
+	width:90%;
+	margin:auto;
+}
+
+/**** Responsive Design ****/
+
+
+@media (max-width:500px) {
+	#menu nav ul{
+		display:  block;
+
+	}
+	#menu nav ul li{
+		margin-bottom: 0.5em;
+	}
+	#fdm,.cote{
+		float:none;
+		width:90%;
+		margin-left:5%;
+	}
+	#fb img{
+		display:none;
+	}
+}

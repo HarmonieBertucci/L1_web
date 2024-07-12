@@ -1,0 +1,108 @@
+/**** Page générale ****/
+a{
+	color: #ff4dc2;
+}
+span{
+background-color: #ff4dc2;
+}
+
+header{
+		background: url("images/culture.jpg") ;
+		padding-top:18em;
+
+}
+
+
+/**** nav de la page ****/
+nav{
+	width:95%;
+	margin: auto;
+}
+
+nav ul{
+	grid-template-columns:1fr 1fr 1fr 1fr;
+	grid-gap: 1em;
+}
+
+nav ul li a{
+		color:black;
+}
+
+nav ul li{
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	background-color:#ff4dc2;
+	border-radius: 0.5em;
+}
+
+nav ul li:hover{
+
+	background-color:#4A94A2;
+	border-radius: 0.5em;
+}
+nav ul li:hover a{
+	color:white;
+}
+
+
+/**** articles ****/
+.ga{
+	float:left;
+	width:30%;
+}
+
+.dr{
+	float:right;
+		width:40%;
+}
+
+.ha{
+	display: grid;
+}
+
+article h2, article blockquote{
+	grid-column: span 2;
+}
+
+#lan{
+	grid-template-columns: 3fr 1fr;
+}
+
+
+img{
+	width:100%;
+	margin:auto;
+}
+
+#pan{
+	transition: 1s;
+	transition-timing-function: ease;
+}
+
+#pan:hover{
+	transform: scale(2)
+}
+
+/**** Responsive Design ****/
+@media (max-width:800px) {
+	#menu nav ul{
+		display:  block;
+
+	}
+	#menu nav ul li{
+		padding-top: 1px;
+		padding-bottom: 1px;
+		margin-bottom: 2px;
+	}
+	#lan,#muz{
+		display:block;
+	}
+	#pan:hover{
+		transform: scale(1);
+	}
+	.dr,.ga{
+		float:none;
+		width:60%;
+		margin:auto;
+	}
+}

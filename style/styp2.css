@@ -1,0 +1,129 @@
+/**** Page générale ****/
+
+a{
+	color: 	#3d7842;
+}
+
+span{
+	background-color: #3d7842;
+} /*surligner le titre*/
+
+main{
+	width:90%;
+	margin:auto;
+}
+
+
+
+h3{
+	font-size: 120%;
+}
+
+/**** header ****/
+header{
+	background: url("images/panoramap2.jpg") ;
+	padding-top:17em;
+
+
+}
+
+h1{
+		color: 	#414541;
+}
+
+
+
+/**** Menu ****/
+
+.men a:hover{
+	color:white;
+	background-color:#3d7842;
+	border-radius: 0.5em;
+}
+
+nav ul li {
+	letter-spacing: 4px;
+}
+
+nav ul li a:hover{
+	color:white;
+	background-color:#3d7842;
+	border-radius: 0.5em;
+}
+
+nav ul li::first-letter{
+	font-weight: bold;
+}
+
+nav ul{
+	grid-template-columns:1fr 1fr;
+}
+
+/*** menu déroulant ***/
+li ul li{
+	display: none;
+}
+
+li:hover ul li{
+	display: block;
+
+}
+
+li ul{
+		grid-template-columns: 1fr;
+}
+
+/**** Article 1 ****/
+
+.tour1{
+	display:grid;
+	grid-template-columns:2fr 1fr;
+}
+
+h3{
+	grid-column: span 2;
+	text-align: center;
+}
+
+.i1{
+	width:90%;
+	margin: auto;
+}
+
+.tour2{
+	display:grid;
+	grid-template-columns:1fr 2fr;
+}
+
+
+/**** Article 2 ****/
+
+
+#lieu img{
+	width:80%;
+}
+
+#lieu{
+	text-align: center;
+}
+
+#lieu p, #lieu h2{
+	text-align: justify;
+}
+
+/**** Responsive Design ****/
+
+@media (max-width:690px) {
+	li:hover ul li{
+		display:  none;
+	}
+}
+
+@media (max-width:777px) {
+	.tour1,.tour2{
+		display:block;
+	}
+	.i1{
+			margin-left:5%;
+	}
+}
